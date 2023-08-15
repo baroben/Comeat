@@ -1,17 +1,23 @@
 body {
     background-color: #668ba4;
     margin: 0px;
-    padding: 0px;
+    padding: 4cqh 0px;
 }
 
 .topnav {
     background-color: #97cba9;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 5px;
+    z-index: 1000;
 }
 
 .topnav a{
     text-decoration: none;
     float: left;
+    margin: 0px 5px;
 }
 
 .item-img {
