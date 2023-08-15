@@ -4,10 +4,14 @@ body {
     padding: 0px;
 }
 
-topnav {
-    float:left;
+.topnav {
+    background-color: #97cba9;
+    overflow: hidden;
 }
 
-a {
-    text-decoration:none;
+.topnav a{
+    text-decoration: none;
+    float: left;
 }
+
+
