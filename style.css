@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:wght@100&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #668ba4;
+    background-color: #F8EDE3;
     margin: 0px;
     padding: 40px 0px;
+    font-family: roboto;
 }
 
 .topnav {
-    background-color: #97cba9;
+    background-color: #DFD3C3;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -19,14 +22,40 @@ body {
 }
 
 .topnav a{
+    color: #85586F;
     text-decoration: none;
     float: left;
     margin: 0px 5px;
 }
 
+.topnav a:hover{
+    color:white;
+}
+
+.item {
+    background-color: #DFD3C3;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    width: 30%;
+    float: left;
+    height: 350px;
+}
+
 .item-img {
-    max-width: 200px;
+    width: 80%;
     height: auto;
+    margin: auto;
+}
+
+.item-title {
+    margin: 0px;
+}
+
+.item-desc {
+    margin: 0px;
+    text-align:justify;
 }
 
 .content {
@@ -45,9 +74,3 @@ body {
     content: '';
 }
 
-.item {
-    width: 50%;
-    float: left;
-    padding: 15px;
-    height: 350px;
-}
