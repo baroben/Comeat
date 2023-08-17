@@ -40,21 +40,23 @@ body {
     padding: 10px;
     width: 30%;
     float: left;
-    height: 350px;
+    height: auto;
     border-radius: 10px;
     border: #D0B8A8 solid;
     border-width: 1px 0.5px 0.5px 1px;
+    overflow: hidden;
 }
 
 .item-img {
+    max-height: 50%;
+    min-height: 50%;
     width: 80%;
     height: auto;
     margin: auto;
 }
 
 .section-title {
-    position: sticky;
-    top:50px;
+    margin-left: 120px;
 }
 
 .item-title {
@@ -64,6 +66,7 @@ body {
 .item-desc {
     margin: 0px;
     text-align:justify;
+    text-overflow: ellipsis;
 }
 
 
@@ -81,5 +84,7 @@ body {
 .row{
     width: 80%;
     margin:auto;
+    display : flex;
+    flex-wrap: wrap;
 }
 
