@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:wght@100;200;400;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -23,6 +23,7 @@ body {
     flex-direction: row;
     align-items: center;
     border-bottom: #D0B8A8 1px solid;
+    justify-content: center;
 }
 
 .nav-separator{
@@ -37,11 +38,11 @@ body {
     color: black;
     text-decoration: none;
     margin: 0px 10px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .topnav a:hover{
-    color:white;
+    color:#85586F;
 }
 
 .item {
@@ -68,7 +69,7 @@ body {
 }
 
 .section-title {
-    margin-left: 120px;
+    margin-left: 20%;
     width: fit-content;
     position: relative;
 }
@@ -120,9 +121,30 @@ body {
 }
 
 .row{
-    width: 80%;
+    width: 60%;
     margin:auto;
     display : flex;
     flex-wrap: wrap;
 }
 
+[class="item"] {
+    width: 100%;
+}
+
+@media only screen and (min-width:600px){
+    .item {width: 45%;}
+    .row {width: 80%;}
+    .section-title {margin-left: 10%;}
+}
+
+@media only screen and (min-width:800px){
+    .row {width: 70%;}
+    .item {width: 45%;}
+    .section-title {margin-left: 15%;}
+}
+
+@media only screen and (min-width:1000px){
+    .row {width: 60%;}
+    .item {width: 30%;}
+    .section-title {margin-left: 20%;}
+}
